@@ -1,0 +1,19 @@
+const gameBoard = document.querySelector('.game-board');
+
+const candyColors = [
+    'red',
+    'blue',
+    'green',
+    'yellow',
+    'orange',
+    'purple'
+];
+
+const candyCount = 64;
+
+for (let i = 0; i < candyCount; i++) {
+    const candy = document.createElement('div');
+    candy.classList.add('candy');
+    candy.style.backgroundColor = candyColors[Math.floor(Math.random() * candyColors.length)];
+    gameBoard.appendChild(candy);
+}
