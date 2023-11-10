@@ -16,7 +16,7 @@ document.addEventListener('OMContentLoad', () => {
   ]
 
 
-  // Board creating
+  // Board creation
   function createBoard() {
     for (let i = 0; i < width*width; i++) {
         const square = document.createElement('div')
