@@ -1,18 +1,12 @@
-.game-container {
+.grid {
+    height: 560vh;
+    width: 560px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
+    flex-wrap: wrap;
+    background-color: blue;
 }
 
-.game-board {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.grid div {
+    height: 70px;
+    width: 70px;
 }
